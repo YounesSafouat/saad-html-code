@@ -2633,91 +2633,6 @@ thead td {
 /* Header */
 
 
-.cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000000;
-    pointer-events: none;
-    will-change: transform;
-    transition: transform 30ms ease-in-out;
-    transform: translate3d(50vw,50vh,0);
-    opacity: 30%;
-}
-.cursor .ball {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border: 2px solid transparent;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: #efbb01;
-    will-change: transform;
-    transition: width .2s ease-in-out,height .2s ease-in-out;
-}
-
-.cursor.cursor_anchor_active .ball{
-    width: 68px;
-    height: 68px;
-}
-
-
-/* 
-.cursor,
-.cursor2,
-.cursor3{
-position: fixed;
-border-radius: 50%;	
-transform: translateX(-50%) translateY(-50%);
-pointer-events: none;
-left: -100px;
-top: 50%;
-transition: all .3s linear;
-pointer-events: none;
-will-change: transform;
-transition: transform 30ms ease-in-out;
-}
-.cursor {
-background-color:transparent;
-z-index: 109;
-height: 2px;
-width: 2px;
-}
-.cursor2,
-.cursor3{
-height: 11px;
-width: 11px;
-z-index: 108;
-transition: all 0.3s ease-out;
-}
-.cursor2.hover,
-.cursor3.hover {
-transform: scale(5) translateX(-35%) translateY(-35%);
-border: none;
-background: transparent;
-}
-
-.cursor2.hover {
-background:#E74B10
-}
-
-
-.ball {
-height: 11px;
-width: 11px;
-cursor: pointer;
-display: block;
-border-radius: 50%;
-border: 1px solid #E74B10;
-background:#E74B10;
-z-index: 100;
-transition: all .3s linear;
-} */
-
-
-
 .header .dnd-section { padding: 0; }
 
 .headerSection { background-color: rgba(255, 255, 255, 0.0); border-bottom: 1px none #FFFFFF; }
@@ -10149,4 +10064,18 @@ li.ia>a:before {
     .faqWrp .overlyImg {
         display:none
     }
+}
+@media (max-width: 991px) {
+  .navigationParent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    z-index: 9999;
+  }
+  .navigationParent.open,
+  .navigationParent.divActive {
+    display: block;
+  }
 }

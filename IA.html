@@ -16399,5 +16399,16 @@ style="max-width: 100%; height: auto; margin-top: -28px;"
           });
       });
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var burger = document.querySelector('.expandMenu');
+  var nav = document.querySelector('.navigationParent');
+  if(burger && nav) {
+    burger.addEventListener('click', function() {
+      nav.classList.toggle('open');
+    });
+  }
+});
+</script>
   </body>
 </html>
