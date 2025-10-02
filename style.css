@@ -186,6 +186,22 @@ sup {
   top: -0.5em;
 }
 
+
+.ia.menu-item::after,
+.ia.menu-item::before,
+.ia .menu-link::after,
+.ia .menu-link::before {
+  content: none !important;
+  display: none !important;
+}
+li.ia sup,
+li.ia .new,
+li.ia::after {
+  display: none !important;
+  content: none !important;
+}
+
+
 /* Embedded content
    ========================================================================== */
 
@@ -2673,6 +2689,8 @@ thead td {
 .navigation-primary .submenu:not(.level-1) .menu-link {
     font-family: Inter, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(0, 49, 88, 1.0); font-size: 14px; text-transform: none;font-weight:700;position:relative
 }
+
+ 
 
 /* Header Sticky */
 
