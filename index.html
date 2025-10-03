@@ -9179,31 +9179,20 @@ style="max-width: 100%; height: auto; margin-top: -28px;"
                                              
                                         
  
-
-                                           
- <div id="accordionCRM" class="accordion-item tertiaryBgColor" data-id="tab-1" 
-     style="background-color: #0D47A1; padding:15px; position:relative; transition: background-color 0.3s;">
- 
-  <!-- ✅ Flèche en haut à droite -->
-  <button id="topBtnCRM" 
-    style="position:absolute; top:10px; right:10px; 
-           background:#fff; color: #0D47A1; border:none; 
-           padding:6px 10px; border-radius:50%; 
-           cursor:pointer; font-size:18px; font-weight:bold;">
-    ↓
-  </button>
+ <div id="accordionCRM" class="accordion-item tertiaryBgColor" 
+     style="background-color: #FFFFFF; padding:15px; position:relative;">
 
   <!-- Titre -->
   <div class="accordion-head d-flex align-center justify-space-between">
     <div class="accordion-title d-flex align-center">
-      <div class="text-white" id="titleCRM">
+      <div class="text-black" id="titleCRM">
         <h4>Solutions CRM</h4>
       </div>
     </div>
   </div>
 
-  <!-- Texte masqué -->
-  <div id="crm-text" style="display:none; margin-top:15px; color:black; font-weight:500;">
+  <!-- Texte affiché directement -->
+  <div id="crm-text" style="display:block; margin-top:15px; color:black; font-weight:500;">
     NOLIA est une Agence Partenaire HubSpot Elite. Vous serez donc accompagné par des experts certifiés quel que soit vos objectifs à atteindre.
   </div>
 
@@ -9215,29 +9204,6 @@ style="max-width: 100%; height: auto; margin-top: -28px;"
   </div>
 </div>
 
-<script>
-  function toggleTexteCRM() {
-    let texte = document.getElementById("crm-text");
-    let fleche = document.getElementById("topBtnCRM");
-    let bloc = document.getElementById("accordionCRM");
-    let titre = document.getElementById("titleCRM");
-
-    if (texte.style.display === "none") {
-      texte.style.display = "block";
-      fleche.textContent = "↑"; 
-      bloc.style.backgroundColor = "#FFFFFF"; // ✅ Fond blanc
-      titre.style.color = "#000000"; // ✅ Titre en noir
-    } else {
-      texte.style.display = "none";
-      fleche.textContent = "↓"; 
-      bloc.style.backgroundColor = "#0D47A1"; // ✅ Fond rouge
-      titre.style.color = "#FFFFFF"; // ✅ Titre en blanc
-    }
-  }
-
-  // ✅ Flèche = toggle
-  document.getElementById("topBtnCRM").addEventListener("click", toggleTexteCRM);
-</script>
 
  
                                        <div id="accordionMarketing" class="accordion-item tertiaryBgColor" data-id="tab-3" 
