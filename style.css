@@ -185,6 +185,10 @@ strong {
   font-weight: bolder;
 }
 
+.lazy-background {
+    background-color: #1A73E8; /* bleu foncé */
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
