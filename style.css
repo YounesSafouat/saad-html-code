@@ -146,6 +146,7 @@ a {
   transition: background 0.3s, color 0.3s;
 }
 
+
 /* ✅ Hover sur le bouton flèche */
 .accordion-item button:hover {
   background: #0D47A1;
