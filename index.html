@@ -9035,7 +9035,7 @@ style="max-width: 100%; height: auto; margin-top: -28px;"
                                     <div
                                       class="text-quaternary pb-md-15 mobilepb15"
                                     >
-                                      <h4 style="color: #0D47A1 ; font-size: xx-large;">
+                                      <h4 style="color: #FF3B30 ; font-size: xx-large;">
                                        Attirez&nbsp;+&nbsp;&nbsp;&nbsp;Convertissez&nbsp;+&nbsp;&nbsp;&nbsp;Fidélisez&nbsp;+ 
                                       </h4>
                                     </div>
@@ -9178,38 +9178,52 @@ style="max-width: 100%; height: auto; margin-top: -28px;"
   </div>
 </div>
 
-
  
-                                       <div id="accordionMarketing" class="accordion-item tertiaryBgColor" data-id="tab-3" 
-     style="background-color: #0D47A1; padding:15px; position:relative; transition: background-color 0.3s;">
+                                         
 
-  <!-- ✅ Bouton flèche en haut à droite -->
-  <button id="topBtnMarketing" 
-    style="position:absolute; top:10px; right:10px; 
-           background:#fff; color:#0D47A1; border:none; 
+                                          
+
+                                          
+                                      
+                                           
+
+  <!-- 🌐 SECTION SOLUTIONS WEB -->
+<div id="accordionMarketing" class="accordion-item tertiaryBgColor" data-id="tab-3" 
+     style="background-color: #0D47A1; padding:15px; position:relative; border-radius:15px; transition: background-color 0.3s;">
+
+  <!-- Bouton flèche -->
+  <button id="topBtnIA" 
+    style="position:absolute;   width:40px;       
+  height:  4px;       
+  font-size: 70px;    
+  border-radius: 20%; text-align: center;
+           background:#0D47A1; color:#FFFFFF; border:none; 
            padding:6px 10px; border-radius:50%; 
            cursor:pointer; font-size:18px; font-weight:bold;">
-    ↓
+    ⌄
   </button>
+
 
   <div class="accordion-head d-flex align-center justify-space-between">
     <div class="accordion-title d-flex align-center">
       <div class="text-white" id="titleMarketing">
-        <h4>Solutions web</h4>
+        <h4>Solutions Web</h4>
       </div>
-    </div>
-
-    <div class="button button--secondary pt15 mobilepb30 pb-md-15 dnd_area-module-4__button0-v2">
-      <!-- ✅ Ce lien ouvre une autre page -->
-      <a href="creation-site-internet.html" id="btnMarketing" style="background-color: #00BFA6;">
-        Voir le pôle CRM
-      </a>
     </div>
   </div>
 
-  <!-- Zone où le texte s’affichera -->
+  <!-- Zone du texte + bouton (cachée par défaut) -->
   <div id="marketing-text" style="display:none; margin-top:15px; color:black; font-weight:500;">
-Site Vitrine, site e-commerce, marketplace, blog, quelque soit votre besoin nos diginautes mettront à profit plus de 10 ans d’expérience pour vous accompagner dans votre projet web !  </div>
+    <!-- Bouton interne -->
+    <div class="button button--secondary pt15 mobilepb30 pb-md-15 dnd_area-module-4__button0-v2" style="margin-bottom:10px;">
+      <a href="creation-site-internet.html" id="btnMarketing" style="background-color: #00BFA6; color:white; padding:8px 15px; border-radius:8px; display:inline-block; text-decoration:none;">
+        Voir le pôle CRM
+      </a>
+    </div>
+
+    Site vitrine, site e-commerce, marketplace, blog — quel que soit votre besoin, 
+    les experts NOLIA mettent à profit plus de 10 ans d’expérience pour accompagner votre projet web !
+  </div>
 </div>
 
 <script>
@@ -9221,91 +9235,84 @@ Site Vitrine, site e-commerce, marketplace, blog, quelque soit votre besoin nos 
 
     if (texte.style.display === "none") {
       texte.style.display = "block";
-      fleche.textContent = "^"; 
-      bloc.style.backgroundColor = "#FFFFFF"; // ✅ Fond blanc
-      titre.style.color = "#000000"; // ✅ Texte devient noir
+      fleche.textContent = "⌃"; 
+      bloc.style.backgroundColor = "#FFFFFF";
+      titre.style.color = "#000000";
     } else {
       texte.style.display = "none";
-      fleche.textContent = "↓"; 
-      bloc.style.backgroundColor = "#0D47A1"; // ✅ Fond rouge
-      titre.style.color = "#FFFFFF"; // ✅ Texte redevient blanc
+      fleche.textContent = "⌄"; 
+      bloc.style.backgroundColor = "#0D47A1";
+      titre.style.color = "#FFFFFF";
     }
   }
 
-  // ✅ Bouton flèche = toggle
   document.getElementById("topBtnMarketing").addEventListener("click", toggleTexteMarketing);
-
-  // ✅ Lien "Voir le pôle CRM" redirige normalement (pas de preventDefault)
 </script>
 
+<br>
 
-                                      
-        <div class="accordion-item tertiaryBgColor" data-id="tab-4" style="background-color: #0D47A1; padding:15px; position:relative;">
-   <div id="accordionIA" class="accordion-item tertiaryBgColor" data-id="tab-4" 
-     style="background-color: #0D47A1; padding:15px; position:relative; transition: background-color 0.3s;">
-  
-  <!-- ✅ Bouton flèche en haut à droite -->
-  <button id="topBtn" 
-    style="position:absolute; top:10px; right:10px; 
-           background:#fff; color: #0D47A1; border:none; 
+<!-- 🤖 SECTION SOLUTIONS DATA & IA -->
+<div id="accordionIA" class="accordion-item tertiaryBgColor" data-id="tab-4" 
+     style="background-color: #0D47A1; padding:15px; position:relative; border-radius:15px; transition: background-color 0.3s;">
+
+  <!-- Bouton flèche -->
+  <button id="topBtnIA" 
+    style="position:absolute;   width:40px;       
+  height:  4px;       
+  font-size: 70px;    
+  border-radius: 20%; text-align: center;
+           background:#0D47A1; color:#FFFFFF; border:none; 
            padding:6px 10px; border-radius:50%; 
            cursor:pointer; font-size:18px; font-weight:bold;">
-    ↓
+    ⌄
   </button>
 
   <div class="accordion-head d-flex align-center justify-space-between">
     <div class="accordion-title d-flex align-center">
-      <div class="text-white">
-        <h4>Solutions Data et IA</h4>
+      <div class="text-white" id="titleIA">
+        <h4>Solutions Data & IA</h4>
       </div>
     </div>
   </div>
 
-  <div class="button button--secondary pt15 mobilepb30 pb-md-15 dnd_area-module-4__button0-v2">
-    <a href="IA.html" id="btnIA" style="background-color: #00BFA6;">
-      Voir le pôle CRM
-    </a>
-  </div>
-
-  <!-- Zone où le texte s’affichera -->
+  <!-- Zone du texte + bouton (cachée par défaut) -->
   <div id="ia-text" style="display:none; margin-top:15px; color:black; font-weight:500;">
-La data et l'intelligence artificielle sont au coeur de vos préoccupations et nous le savons. Aujourd'hui, nos Data Engineer vous aident à faire parler vos données et à créer une solution adaptée à vos besoins pour rendre ces informations plus smart, plus accessible et plus compréhensibles.  </div>
+    <!-- Bouton interne -->
+    <div class="button button--secondary pt15 mobilepb30 pb-md-15 dnd_area-module-4__button0-v2" style="margin-bottom:10px;">
+      <a href="IA.html" id="btnIA" style="background-color: #00BFA6; color:white; padding:8px 15px; border-radius:8px; display:inline-block; text-decoration:none;">
+        Voir le pôle CRM
+      </a>
+    </div>
+
+    La data et l’intelligence artificielle sont au cœur de votre stratégie.  
+    Les ingénieurs NOLIA vous aident à exploiter vos données pour créer des solutions sur mesure, 
+    plus intelligentes, accessibles et performantes.
+  </div>
 </div>
 
 <script>
-  function toggleTexte() {
+  function toggleTexteIA() {
     let texte = document.getElementById("ia-text");
-    let fleche = document.getElementById("topBtn");
+    let fleche = document.getElementById("topBtnIA");
     let bloc = document.getElementById("accordionIA");
+    let titre = document.getElementById("titleIA");
 
     if (texte.style.display === "none") {
       texte.style.display = "block";
-      fleche.textContent = "^"; 
-      bloc.style.backgroundColor = "#FFFFFF"; // ✅ Fond blanc
+      fleche.textContent = "⌃"; 
+      bloc.style.backgroundColor = "#FFFFFF";
+      titre.style.color = "#000000";
     } else {
       texte.style.display = "none";
-      fleche.textContent = "↓"; 
-      bloc.style.backgroundColor = "#0D47A1"; // ✅ Fond rouge d'origine
+      fleche.textContent = "⌄"; 
+      bloc.style.backgroundColor = "#0D47A1";
+      titre.style.color = "#FFFFFF";
     }
   }
 
-  document.getElementById("topBtn").addEventListener("click", toggleTexte);
+  document.getElementById("topBtnIA").addEventListener("click", toggleTexteIA);
 </script>
-  </div>
-  
- 
-                                        </div>
 
-                                         
-
-                                          
-
-                                          
-                                      
-                                           
-
- 
-                                           -->
                                            
                                           
                                       </div>
@@ -9585,7 +9592,7 @@ La data et l'intelligence artificielle sont au coeur de vos préoccupations et n
                   <!-- </div> -->
                   <!--end row-->
                 <!-- </div> --> 
-                <!--end row-wrapper -->
+                <!--end row-wrapper --> <br> 
 
                 <div
                   class="row-fluid-wrapper row-depth-1 row-number-5 dnd-section dnd_area-row-4-force-full-width-section dnd_area-row-4-padding full-width-forcedd"
@@ -9941,10 +9948,10 @@ La data et l'intelligence artificielle sont au coeur de vos préoccupations et n
                       <div style="text-align:left;">
                         <img src="images/HubSpot-Logo-removebg-preview.png" alt="hubspot-icon" style="width: 150px !important; height: auto !important; max-width: none !important; transform: scale(1.2); display: inline-block;">
                       </div>
-                      <div class="pt-md-20 pb-md-15">
+                      <!-- <div class="pt-md-20 pb-md-15">
                         <h4 style="color: #0D47A1; text-align: left;">HUBSPOT</h4>
-                      </div>
-                    </div>
+                      </div> -->
+                    </div><br>
                     <div class="text-white" style="max-width: 90%; text-align: left; margin-left: 0;">
                       <p style="color: black; word-wrap: break-word; text-align: left; font-size:20px; line-height: 1.5;">
                         Depuis plus de 4 ans, nous sommes une agence partenaire HubSpot pour maximiser vos leviers d'acquisition. Que ce soit pour digitaliser vos ventes, booster vos actions marketing ou industrialiser le SAV, HubSpot est la plateforme idéale pour votre croissance.
@@ -9961,12 +9968,9 @@ La data et l'intelligence artificielle sont au coeur de vos préoccupations et n
                   <div class="partner-col">
                     <div class="title-n-img-wrap mobilepb15 text-center">
                       <div style="text-align:left;">
-                        <img src="images/Google-Partner-Logo-Vector.svg--removebg-preview.png" alt="google-icon" style="width: 150px !important; height: auto !important; max-width: none !important; transform: scale(1.2); display: inline-block;">
+                        <img src="images\LOGO_GOOGLE-removebg-preview.png" alt="google-icon" style="width: 150px !important; height: auto !important; max-width: none !important; transform: scale(1.2); display: inline-block;">
                       </div>
-                      <div class="pt-md-20 pb-md-15">
-                        <h4 style="color: #0D47A1; text-align: left;">GOOGLE PARTNER</h4>
-                      </div>
-                    </div>
+                       
                     <div class="text-white" style="max-width: 90%; text-align: left; margin-left: 0;">
                       <p style="color: black; word-wrap: break-word; text-align: left; font-size: 20px; line-height: 1.5;">
                         NOLIA est certifiée Google Partner depuis 2023, avec les compétences et l’expertise pour gérer vos campagnes Google. Nous vous accompagnons dans l’acquisition client grâce à notre équipe dédiée.
@@ -9987,9 +9991,9 @@ La data et l'intelligence artificielle sont au coeur de vos préoccupations et n
                     <div style="text-align:left;">
                       <img src="images/Kalitics-Logo__1_-removebg-preview.png" alt="kalitics-icon" style="width: 150px !important; height: auto !important; max-width: none !important; transform: scale(1.2); display: inline-block;">
                     </div>
-                    <div class="pt-md-20 pb-md-15">
+                    <!-- <div class="pt-md-20 pb-md-15">
                       <h4 style="color: #0D47A1; text-align: left;">KALITICS</h4>
-                    </div>
+                    </div> -->
                     <div class="text-white" style="max-width: 90%; text-align: left; margin-left: 0;">
                       <p style="color: black; word-wrap: break-word; text-align: left; font-size:20px; line-height: 1.5;">
                         NOLIA s’associe à Kalitics pour offrir un accompagnement stratégique et digital complet, optimisant chaque étape du parcours client et mettant en place des stratégies performantes et durables.
@@ -10007,9 +10011,9 @@ La data et l'intelligence artificielle sont au coeur de vos préoccupations et n
                     <div style="text-align:left;">
                       <img src="images/aircall.png" alt="aircall-icon" style="width: 150px !important; height: auto !important; max-width: none !important; transform: scale(1.2); display: inline-block;">
                     </div>
-                    <div class="pt-md-20 pb-md-15">
+                    <!-- <div class="pt-md-20 pb-md-15">
                       <h4 style="color: #0D47A1; text-align: left;">AIRCALL</h4>
-                    </div>
+                    </div> -->
                     <div class="text-white" style="max-width: 90%; text-align: left; margin-left: 0;">
                       <p style="color: black; word-wrap: break-word; text-align: left; font-size: 20px; line-height: 1.5;">
                         Grâce à notre partenariat avec Aircall, nous proposons des solutions téléphoniques cloud adaptées à tous les besoins, des petites aux grandes entreprises, pour simplifier vos communications et booster votre efficacité commerciale.
@@ -10032,6 +10036,134 @@ La data et l'intelligence artificielle sont au coeur de vos préoccupations et n
   </div>
 </div>
 <br><br>
+
+                  <h4 style="text-align: center; color: #FF3B30; font-size: 23px;">Témoignages</h4>  
+
+
+                <h2 style="font-family: Arial, sans-serif; font-size: 30px; font-weight: normal; color: #0D47A1; text-align: center;">
+                                         <strong>                                          Nos clients témoignent
+</strong>
+                                      </h2><br> 
+
+                                                       <h4 style="text-align: center; color: darkgray;">  Découvrez l’impact de NOLIA sur nos clients</h4> <br> 
+
+<div class="testimonial-slider" style="display:flex; align-items:center; justify-content:center; gap:20px; margin:40px auto;">
+
+  <!-- Bouton gauche -->
+  <button id="prevBtn" style="font-size:45px; background:none; border:none; cursor:pointer; color:#1d4ed8;">
+    ⬅︎
+  </button>
+
+  <!-- Les témoignages -->
+  <div class="testimonials" style="display:flex; gap:20px; overflow:hidden; max-width:1200px;">
+    
+    <!-- Témoignage 1 -->
+<div class="testimonial" style="flex:0 0 400px; min-height:400px; background:#eaf6f8; border-radius:16px; padding:30px; box-shadow:0 4px 14px rgba(0,0,0,0.1);">
+      <div style="color:#fbbf24; font-size:20px;">★★★★★</div><br>
+      <p style="margin:15px 0; font-size:20px; line-height:1.6;">
+        "NOLIA nous a accompagné dans la mise en place de notre CRM 
+        et l’automatisation de nos processus. Leur équipe est réactive,
+         disponible et à l’écoute de nos besoins. Un vrai partenaire de confiance !""
+      </p><br><br>
+      <div style="margin-top:15px; display:flex; align-items:center; gap:10px;">
+        <img src="images/client1.jpg" alt="Hasnaa Eddal" style="width:45px; height:45px; border-radius:50%;">
+        <div>
+          <strong>Nassim Laurent</strong><br>
+          <span style="font-size:13px; color:#555;">Responsable des Opérations chez FoodExpress</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Témoignage 2 -->
+<div class="testimonial" style="flex:0 0 380px; min-height:300px; background:#eaf6f8; border-radius:16px; padding:30px; box-shadow:0 4px 14px rgba(0,0,0,0.1);">
+      <div style="color:#fbbf24; font-size:20px;">★★★★★</div><br>
+      <p style="margin:15px 0; font-size:20px; line-height:1.6;">
+        "Grâce à NOLIA, nous avons optimisé notre gestion des données 
+        et amélioré la collaboration entre nos équipes. Leur expertise 
+        technique et leur professionnalisme sont remarquables."
+      </p><br><br>
+      <div style="margin-top:15px; display:flex; align-items:center; gap:10px;">
+        <img src="images/client2.jpg" alt="Taha Mzali" style="width:45px; height:45px; border-radius:50%;">
+        <div>
+          <strong>Samir Lemoine</strong><br>
+          <span style="font-size:13px; color:#555;">CEO de GreenTech Solutions</span>
+        </div>
+      </div>
+    </div>
+    <!-- Témoignage 2 -->
+<div class="testimonial" style="flex:0 0 380px; min-height:380px; background:#eaf6f8; border-radius:16px; padding:30px; box-shadow:0 4px 14px rgba(0,0,0,0.1);">
+      <div style="color:#fbbf24; font-size:20px;">★★★★★</div><br>
+      <p style="margin:15px 0; font-size:20px; line-height:1.6;">
+"L’équipe NOLIA a su comprendre rapidement nos besoins et nous proposer des solutions sur-mesure. La formation qu’ils ont dispensée à nos équipes a été claire, pratique et efficace."      </p><br><br>
+      <div style="margin-top:15px; display:flex; align-items:center; gap:10px;">
+        <img src="images/client2.jpg" alt="Taha Mzali" style="width:45px; height:45px; border-radius:50%;">
+        <div>
+          <strong>Hugo Bensalem</strong><br>
+          <span style="font-size:13px; color:#555;">CEO de FashionLab</span>
+        </div>
+      </div>
+    </div>
+    <!-- Témoignage 2 -->
+<div class="testimonial" style="flex:0 0 380px; min-height:380px; background:#eaf6f8; border-radius:16px; padding:30px; box-shadow:0 4px 14px rgba(0,0,0,0.1);">
+      <div style="color:#fbbf24; font-size:20px;">★★★★★</div><br>
+      <p style="margin:15px 0; font-size:20px; line-height:1.6;">
+"Nous avons migré notre ERP avec NOLIA et le processus a été fluide, sans interruption de nos activités. Leur accompagnement est sérieux, méthodique et rassurant à chaque étape."      </p><br><br>
+      <div style="margin-top:15px; display:flex; align-items:center; gap:10px;">
+        <img src="images/client2.jpg" alt="Taha Mzali" style="width:45px; height:45px; border-radius:50%;">
+        <div>
+          <strong>Taha Moreau</strong><br>
+          <span style="font-size:13px; color:#555;">Responsable Marketing FashionLab</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Témoignage 3 -->
+<div class="testimonial" style="flex:0 0 380px; min-height:450px; background:#eaf6f8; border-radius:16px; padding:30px; box-shadow:0 4px 14px rgba(0,0,0,0.1);">
+      <div style="color:#fbbf24; font-size:20px;">★★★★★</div><br>
+      <p style="margin:15px 0; font-size:20px; line-height:1.6;">
+        "NOLIA est un partenaire fiable et compétent. Leur approche personnalisée et leur capacité à répondre à nos demandes rapidement font toute la différence. Nous les recommandons vivement."
+      </p><br><br><br> 
+      <div style="margin-top:15px; display:flex; align-items:center; gap:10px;">
+        <img src="images/client3.jpg" alt="Mehdi Ktiri" style="width:45px; height:45px; border-radius:50%;">
+        <div>
+          <strong>Yacine Moreau</strong><br>
+          <span style="font-size:13px; color:#555;">Directeur général de FashionLab</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bouton droit -->
+  <button id="nextBtn" style="font-size:45px; background:none; border:none; cursor:pointer; color:#1d4ed8;">
+    ➡︎
+  </button>
+
+</div>
+<script>   
+const testimonials = document.querySelector(".testimonials");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let slideWidth = 420; // largeur bloc + marge
+
+nextBtn.addEventListener("click", () => {
+  testimonials.scrollBy({ left: slideWidth, behavior: "smooth" });
+});
+
+prevBtn.addEventListener("click", () => {
+  testimonials.scrollBy({ left: -slideWidth, behavior: "smooth" });
+});
+
+// Défilement automatique toutes les 6s
+setInterval(() => {
+  testimonials.scrollBy({ left: slideWidth, behavior: "smooth" });
+}, 6000);
+</script>
+                
+<br><br>
+
+
 
  <footer >
  
