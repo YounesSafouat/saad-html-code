@@ -9152,165 +9152,160 @@ style="max-width: 100%; height: auto; margin-top: -28px;"
 
                                              
                                         
+ <style>
+  /* Conteneur principal */
+  .solutions-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  /* Bloc solution */
+  .solution-block {
+    max-height: 1%; /* limite la hauteur */
+    overflow: hidden; 
+    position: relative;
+    background-color: #0D47A1;
+    color: #FFFFFF;
+    padding: 15px 10px;
+    border-radius: 15px;
+    flex: 1 1 90%;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+
+     
+  }
+
+  /* Hover effect */
+  .solution-block:hover {
+    background-color: #00BFA6;
+  }
+
+  /* Nom du bloc */
+  .solution-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  /* Bouton à droite */
+   /* Style du bouton */
+.solution-btn {
+  display: inline-block;
+  background-color: #00BFA6; /* Couleur de fond */
+  color: #FFFFFF; /* Couleur du texte */
+  padding: 12px 24px; /* Espacement interne */
+  font-size: 16px; /* Taille de la police */
+  font-weight: 600; /* Poids de la police */
+  text-transform: uppercase; /* Texte en majuscules */
+  text-decoration: none; /* Suppression du soulignement */
+  border-radius: 50px; /* Bords arrondis */
+  border: 2px solid transparent; /* Bordure transparente */
+  transition: all 0.3s ease; /* Transition fluide pour les effets */
+  cursor: pointer; /* Curseur en forme de main */
+  text-align: center; /* Centrage du texte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée subtile */
+}
+
+/* Effet au survol */
+.solution-btn:hover {
+  background-color: #FFFFFF; /* Couleur de fond au survol */
+  color: #00BFA6; /* Couleur du texte au survol */
+  border-color: #00BFA6; /* Bordure au survol */
+  transform: translateY(-2px); /* Légère élévation */
+}
+
+/* Effet au clic */
+.solution-btn:active {
+  transform: translateY(2px); /* Enfoncement du bouton */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
  
- <div id="accordionCRM" class="accordion-item tertiaryBgColor" 
-     style="background-color: #FFFFFF; padding:15px; position:relative;">
+  /* Texte détaillé (initialement caché) */
+  .solution-detail {
+    display: none;
+    margin-top: 15px;
+    color: #000000;
+    font-weight: 500;
+  }
 
-  <!-- Titre -->
-  <div class="accordion-head d-flex align-center justify-space-between">
-    <div class="accordion-title d-flex align-center">
-      <div class="text-black" id="titleCRM">
-        <h4>Solutions CRM</h4>
-      </div>
+  .solution-detail .detail-btn {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #00BFA6;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+</style>
+
+<div class="solutions-container">
+
+  <!-- Bloc CRM -->
+  <div class="solution-block" id="blockCRM">
+    <div class="solution-title">Solutions CRM</div>
+    <a class="solution-btn" id="btnCRM">Découvrir</a>
+    <div class="solution-detail" id="detailCRM" style="color: #FFFFFF; font-size: 17px;">
+      NOLIA est une Agence Partenaire HubSpot Elite. Vous serez donc accompagné par des experts certifiés quel que soit vos objectifs à atteindre.
+      <br>
+      <a href="agence-partenaire-hubspot.html" class="detail-btn">Voir le pôle CRM</a>
     </div>
   </div>
 
-  <!-- Texte affiché directement -->
-  <div id="crm-text" style="display:block; margin-top:15px; color:black; font-weight:500;">
-    NOLIA est une Agence Partenaire HubSpot Elite. Vous serez donc accompagné par des experts certifiés quel que soit vos objectifs à atteindre.
-  </div>
-
-  <!-- Bouton redirection -->
-  <div class="button button--secondary pt15 mobilepb30 pb-md-15 dnd_area-module-4__button0-v2">
-    <a href="agence-partenaire-hubspot.html" style="background-color: #00BFA6;">
-      Voir le pôle CRM
-    </a>
-  </div>
-</div>
-
- 
-                                         
-
-                                          
-
-                                          
-                                      
-                                           
-
-  <!-- 🌐 SECTION SOLUTIONS WEB -->
-<div id="accordionMarketing" class="accordion-item tertiaryBgColor" data-id="tab-3" 
-     style="background-color: #0D47A1; padding:15px; position:relative; border-radius:15px; transition: background-color 0.3s;">
-
-  <!-- Bouton flèche -->
-  <button id="topBtnIA" 
-    style="position:absolute;   width:40px;       
-  height:  4px;       
-  font-size: 70px;    
-  border-radius: 20%; text-align: center;
-           background:#0D47A1; color:#FFFFFF; border:none; 
-           padding:6px 10px; border-radius:50%; 
-           cursor:pointer; font-size:18px; font-weight:bold;">
-    ⌄
-  </button>
-
-
-  <div class="accordion-head d-flex align-center justify-space-between">
-    <div class="accordion-title d-flex align-center">
-      <div class="text-white" id="titleMarketing">
-        <h4>Solutions Web</h4>
-      </div>
+  <!-- Bloc Web -->
+  <div class="solution-block" id="blockWeb">
+    <div class="solution-title">Solutions Web</div>
+    <a class="solution-btn" id="btnWeb">Découvrir</a>
+    <div class="solution-detail" id="detailWeb" style="color: #FFFFFF; font-size: 17px;">
+      Site vitrine, site e-commerce, marketplace, blog — quel que soit votre besoin, 
+      les experts NOLIA mettent à profit plus de 10 ans d’expérience pour accompagner votre projet web !
+      <br>
+      <a href="creation-site-internet.html" class="detail-btn">Voir le pôle Web</a>
     </div>
   </div>
 
-  <!-- Zone du texte + bouton (cachée par défaut) -->
-  <div id="marketing-text" style="display:none; margin-top:15px; color:black; font-weight:500;">
-    <!-- Bouton interne -->
-    <div class="button button--secondary pt15 mobilepb30 pb-md-15 dnd_area-module-4__button0-v2" style="margin-bottom:10px;">
-      <a href="creation-site-internet.html" id="btnMarketing" style="background-color: #00BFA6; color:white; padding:8px 15px; border-radius:8px; display:inline-block; text-decoration:none;">
-        Voir le pôle CRM
-      </a>
+  <!-- Bloc Data & IA -->
+  <div class="solution-block" id="blockIA">
+    <div class="solution-title">Solutions Data & IA</div>
+    <a class="solution-btn" id="btnIA">Découvrir</a>
+    <div class="solution-detail" id="detailIA" style="color: #FFFFFF; font-size: 17px;">
+      La data et l’intelligence artificielle sont au cœur de votre stratégie.  
+      Les ingénieurs NOLIA vous aident à exploiter vos données pour créer des solutions sur mesure, 
+      plus intelligentes, accessibles et performantes.
+      <br>
+      <a href="IA.html" class="detail-btn">Voir le pôle IA</a>
     </div>
-
-    Site vitrine, site e-commerce, marketplace, blog — quel que soit votre besoin, 
-    les experts NOLIA mettent à profit plus de 10 ans d’expérience pour accompagner votre projet web !
   </div>
+
 </div>
 
 <script>
-  function toggleTexteMarketing() {
-    let texte = document.getElementById("marketing-text");
-    let fleche = document.getElementById("topBtnMarketing");
-    let bloc = document.getElementById("accordionMarketing");
-    let titre = document.getElementById("titleMarketing");
+  // Fonction pour toggler le texte détaillé
+  function setupToggle(btnId, detailId) {
+    const btn = document.getElementById(btnId);
+    const detail = document.getElementById(detailId);
 
-    if (texte.style.display === "none") {
-      texte.style.display = "block";
-      fleche.textContent = "⌃"; 
-      bloc.style.backgroundColor = "#FFFFFF";
-      titre.style.color = "#000000";
-    } else {
-      texte.style.display = "none";
-      fleche.textContent = "⌄"; 
-      bloc.style.backgroundColor = "#0D47A1";
-      titre.style.color = "#FFFFFF";
-    }
+    btn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      // Toggle display
+      if(detail.style.display === "none" || detail.style.display === "") {
+        detail.style.display = "block";
+      } else {
+        detail.style.display = "none";
+      }
+    });
   }
 
-  document.getElementById("topBtnMarketing").addEventListener("click", toggleTexteMarketing);
-</script>
-
-<br>
-
-<!-- 🤖 SECTION SOLUTIONS DATA & IA -->
-<div id="accordionIA" class="accordion-item tertiaryBgColor" data-id="tab-4" 
-     style="background-color: #0D47A1; padding:15px; position:relative; border-radius:15px; transition: background-color 0.3s;">
-
-  <!-- Bouton flèche -->
-  <button id="topBtnIA" 
-    style="position:absolute;   width:40px;       
-  height:  4px;       
-  font-size: 70px;    
-  border-radius: 20%; text-align: center;
-           background:#0D47A1; color:#FFFFFF; border:none; 
-           padding:6px 10px; border-radius:50%; 
-           cursor:pointer; font-size:18px; font-weight:bold;">
-    ⌄
-  </button>
-
-  <div class="accordion-head d-flex align-center justify-space-between">
-    <div class="accordion-title d-flex align-center">
-      <div class="text-white" id="titleIA">
-        <h4>Solutions Data & IA</h4>
-      </div>
-    </div>
-  </div>
-
-  <!-- Zone du texte + bouton (cachée par défaut) -->
-  <div id="ia-text" style="display:none; margin-top:15px; color:black; font-weight:500;">
-    <!-- Bouton interne -->
-    <div class="button button--secondary pt15 mobilepb30 pb-md-15 dnd_area-module-4__button0-v2" style="margin-bottom:10px;">
-      <a href="IA.html" id="btnIA" style="background-color: #00BFA6; color:white; padding:8px 15px; border-radius:8px; display:inline-block; text-decoration:none;">
-        Voir le pôle CRM
-      </a>
-    </div>
-
-    La data et l’intelligence artificielle sont au cœur de votre stratégie.  
-    Les ingénieurs NOLIA vous aident à exploiter vos données pour créer des solutions sur mesure, 
-    plus intelligentes, accessibles et performantes.
-  </div>
-</div>
-
-<script>
-  function toggleTexteIA() {
-    let texte = document.getElementById("ia-text");
-    let fleche = document.getElementById("topBtnIA");
-    let bloc = document.getElementById("accordionIA");
-    let titre = document.getElementById("titleIA");
-
-    if (texte.style.display === "none") {
-      texte.style.display = "block";
-      fleche.textContent = "⌃"; 
-      bloc.style.backgroundColor = "#FFFFFF";
-      titre.style.color = "#000000";
-    } else {
-      texte.style.display = "none";
-      fleche.textContent = "⌄"; 
-      bloc.style.backgroundColor = "#0D47A1";
-      titre.style.color = "#FFFFFF";
-    }
-  }
-
-  document.getElementById("topBtnIA").addEventListener("click", toggleTexteIA);
+  setupToggle("btnCRM", "detailCRM");
+  setupToggle("btnWeb", "detailWeb");
+  setupToggle("btnIA", "detailIA");
 </script>
 
                                            
@@ -9815,24 +9810,24 @@ style="max-width: 100%; height: auto; margin-top: -28px;"
                                   <div class="content-inner">
                                     <div class="text-quinary">
                                       <h2 style="color: #FFFFFF;">
-                                        Déployez, planifiez et monitorez vos
-                                        flux de données avec DigitaliSync et
-                                        l'IA
+                                       Synchronisez vos outils et automatisez vos flux de données avec la puissance de l’IA
                                       </h2>
                                     </div>
 
                                     <div
                                       class="mobilept10 pt-md-35 text-quinary font18"
                                     >
-                                      <p style="color:black;">
-                                        DigitaliSync est une plateforme
+                                      <p style="color:black; font-family: Arial, Helvetica, sans-serif;font-size: 20px;">
+
+                                        Nos experts connectent et synchronisent vos logiciels métiers, CRM, ERP et sites internet pour qu’ils communiquent entre eux de manière fluide et fiable. Vos données circulent automatiquement d’une application à l’autre : contacts, ventes, formulaires, devis ou commandes se mettent à jour sans intervention manuelle.
+                                        <!-- DigitaliSync est une plateforme
                                         <strong  style="color: #FFFFFF;"
                                           >Data as a Service boostée à l'IA </strong 
                                         >et<strong> </strong>dédiée à
                                         l'intégration et la synchronisation de
                                         données entre votre CRM, vos
                                         applications métiers (ERP) et vos sites
-                                        internet
+                                        internet -->
                                       </p>
                                     </div>
 
@@ -10406,20 +10401,16 @@ setInterval(() => {
                 <div class="mb-d-none">
                   <div class="logo-group">
                     <div class="logo-n-text pb15">
-                      <div class="footer-logo pb20">
-                        <a href="?hsLang=fr-fr">
-                          <img
-                            class=""
-                            src="images\NOLIA-logo.png"
-                            alt="Logo final-DIGITALISIM-FR-white"
-                            no=""
-                            width="700"
-                            height="92"
-                            style="max-width: 100%; height: auto"
-                            loading="eager"
-                          />
-                        </a>
-                      </div>
+                     <div class="footer-logo pb20" style="width: 300px; text-align: left; display: flex !important; justify-content: flex-end !important">
+  <a href="?hsLang=fr-fr">
+    <img
+      src="images/Capture_d_écran_2025-10-05_013314-removebg-preview.png"
+      alt="Logo final-DIGITALISIM-FR-white"
+      style="width: 100%; height: auto; max-width: none; left: auto;"
+    />
+  </a>
+</div>
+
                       <div class="logo-text mb-d-none">
                         Agence experte en Transformation Digitale, Intégration
                         CRM HubSpot, IA et Synchronisation Data à Paris, Lyon et
@@ -10709,7 +10700,7 @@ setInterval(() => {
                 </div>
                 <div class="order4">
                   <div class="footer-menu-group">
-                    <h5 class="text-white pb20">Page Blog</h5>
+                    <h5 class="text-white pb20">Ressources</h5>
                     <span
                       id="hs_cos_wrapper_module_170600739673610_"
                       class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu"
