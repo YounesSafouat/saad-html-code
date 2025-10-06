@@ -48,6 +48,36 @@
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+
+section, .row-fluid-wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Supprime les marges et paddings verticaux entre sections */
+.row-fluid-wrapper,
+.dnd-section,
+.baseModuleStyle {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Supprime les espacements Bootstrap */
+.row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.col-lg-6 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Supprime les sauts de ligne */
+br {
+  display: none;
+}
+
 ////////////////////////////////////////////////////
 /*RESPONSIVE TAILLE
 /* Version mobile */
